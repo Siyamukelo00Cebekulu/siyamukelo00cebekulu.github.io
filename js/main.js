@@ -2,6 +2,7 @@ const navToggle = document.querySelector('.nav-toggle');
 const siteNav = document.querySelector('.site-nav');
 const themeToggle = document.querySelector('.theme-toggle');
 const body = document.body;
+const cursor = document.querySelector('.cursor');
 
 function setTheme(mode) {
   if (mode === 'dark') {
@@ -32,6 +33,22 @@ if (navToggle && siteNav) {
     if (!siteNav.contains(event.target) && !navToggle.contains(event.target)) {
       siteNav.classList.remove('open');
     }
+  });
+}
+
+// Custom cursor animation
+if (cursor) {
+  document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  });
+
+  document.addEventListener('mouseenter', () => {
+    cursor.style.opacity = '1';
+  });
+
+  document.addEventListener('mouseleave', () => {
+    cursor.style.opacity = '0';
   });
 }
 

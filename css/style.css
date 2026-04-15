@@ -17,6 +17,40 @@ body {
     background: var(--bg);
     color: var(--text);
     min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body::before,
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+body::before {
+    background: radial-gradient(circle at 20% 80%, rgba(79, 70, 229, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(79, 70, 229, 0.1) 0%, transparent 50%);
+    animation: float 20s ease-in-out infinite;
+}
+
+body::after {
+    background: radial-gradient(circle at 50% 50%, rgba(79, 70, 229, 0.05) 0%, transparent 70%);
+    animation: float-reverse 25s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+@keyframes float-reverse {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(20px) rotate(-5deg); }
 }
 
 body.dark-mode {
@@ -244,6 +278,9 @@ main {
 .profile-links a {
     color: var(--accent);
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .summary-grid,
@@ -259,6 +296,7 @@ main {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+    gap: 0.5rem;
 .summary-card,
 .skills-card,
 .feature-card,
@@ -482,7 +520,39 @@ button[type="submit"]:hover {
     }
 
     .nav-toggle {
-        width: 1.9rem;
+ 
+
+/* Custom Cursor */
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--accent);
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.1s ease;
+    mix-blend-mode: difference;
+}
+
+.cursor::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #fff;
+    transform: translate(-50%, -50%);
+}
+
+a:hover ~ .cursor,
+button:hover ~ .cursor,
+input:hover ~ .cursor,
+textarea:hover ~ .cursor {
+    transform: scale(1.5);
+}       width: 1.9rem;
         height: 1.9rem;
     }
 }
