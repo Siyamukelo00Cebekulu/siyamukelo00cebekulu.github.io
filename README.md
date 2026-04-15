@@ -33,10 +33,10 @@ Personal-Portfolio/
 
 ## Technologies
 
-- HTML
-- CSS (Grid, Flexbox, responsive media queries)
-- JavaScript
-- Google Fonts
+- <i class="fab fa-html5"></i> HTML
+- <i class="fab fa-css3-alt"></i> CSS (Grid, Flexbox, responsive media queries)
+- <i class="fab fa-js"></i> JavaScript
+- <i class="fas fa-font"></i> Google Fonts
 
 ## Local Preview
 
