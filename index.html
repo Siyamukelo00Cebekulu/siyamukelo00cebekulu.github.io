@@ -2,94 +2,140 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Siyamukelo Cebekulu | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand">
+        <a href="index.html">Siyamukelo Cebekulu</a>
+      </div>
+      <button class="nav-toggle" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <button class="theme-toggle" aria-label="Toggle dark mode">Dark</button>
+      </nav>
+    </header>
 
-<header class="navbar">
-  <div class="logo">Siyamukelo Cebekulu</div>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Projects</a>
-    <a href="#">Articles</a>
-    <a href="#">Contact</a>
-  </nav>
-</header>
+    <main>
+      <section class="hero hero-landing">
+        <div class="hero-copy">
+          <p class="eyebrow">Junior Backend Developer</p>
+          <h1>Building secure APIs and reliable systems for health-tech and energy.</h1>
+          <p class="hero-text">I help teams ship backend services with solid authentication, clean architecture, and production-ready reliability using C#, ASP.NET Core, Angular, and SQL.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="contact.html">Get in touch</a>
+            <a class="button button-secondary" href="projects.html">View projects</a>
+          </div>
+        </div>
 
-<section class="hero">
-  <h1>Full Stack Developer</h1>
-  <p>HTML structure styled with CSS, Flexbox, and Responsive Layout</p>
-</section>
+        <div class="hero-card card hero-profile">
+          <div class="hero-illustration">
+            <img src="assets/hero-illustration.svg" alt="Illustration of a modern backend workflow" />
+          </div>
+          <h2>Siyamukelo Cebekulu</h2>
+          <p class="hero-role">Johannesburg, South Africa</p>
+          <div class="profile-meta">
+            <span>+27 60 984 0190</span>
+            <span>siyamukelocebekulu@gmail.com</span>
+          </div>
+          <div class="profile-links">
+            <a href="https://github.com/Siyamukelo00Cebekulu" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/siyamukelo-cebekulu-939199221" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </section>
 
-<section class="main-grid">
+      <section class="summary-grid">
+        <article class="card summary-card">
+          <h2>Summary</h2>
+          <p>Junior Backend Developer with experience building and maintaining production systems in health-tech and energy sectors. Skilled in API design, authentication, and system reliability.</p>
+        </article>
 
-  <!-- Projects -->
-  <div class="card projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>Service Marketplace Platform (Angular + .NET)</li>
-      <li>Task Tracker CLI (Java)</li>
-      <li>ASP.NET Todo API with JWT Auth</li>
-      <li>Three.js Web Portfolio</li>
-      <li>Subscription Deals Mobile App MVP</li>
-    </ul>
+        <article class="card skills-card">
+          <h2>Technical Skills</h2>
+          <div class="skill-list">
+            <span>C#</span>
+            <span>JavaScript</span>
+            <span>SQL</span>
+            <span>Java</span>
+            <span>Python</span>
+            <span>ASP.NET Core</span>
+            <span>Entity Framework Core</span>
+            <span>Angular</span>
+            <span>TypeScript</span>
+            <span>HTML & CSS</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="featured-grid" id="work">
+        <article class="card feature-card">
+          <h3>Todo List API</h3>
+          <p>ASP.NET Core • EF Core • SQLite • JWT</p>
+          <ul>
+            <li>Secure REST API with JWT authentication and refresh tokens.</li>
+            <li>CRUD operations with filtering, pagination and structured validation.</li>
+            <li>Rate limiting, error handling, and integration tests.</li>
+          </ul>
+        </article>
+        <article class="card feature-card">
+          <h3>Blogging Platform API</h3>
+          <p>ASP.NET Core • EF Core • SQLite</p>
+          <ul>
+            <li>Designed scalable database schema and API documentation with Swagger.</li>
+            <li>Implemented search, DTOs, controllers, and clean architecture patterns.</li>
+          </ul>
+        </article>
+        <article class="card feature-card">
+          <h3>Expense Tracker CLI</h3>
+          <p>Java • File Storage • Reporting</p>
+          <ul>
+            <li>Expense tracking with categorization, budgeting alerts, and exports.</li>
+            <li>Structured command system for reliable local persistence.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="reviews-section">
+        <div class="section-header">
+          <span class="eyebrow">Testimonials</span>
+          <h2>What mentors and peers say</h2>
+        </div>
+        <div class="review-grid">
+          <div class="card review-card">
+            <p>"Siyamukelo resolves production issues quickly and improves system reliability with thoughtful backend solutions."</p>
+            <span>Senior Engineer, Meditech</span>
+          </div>
+          <div class="card review-card">
+            <p>"A skilled developer who delivers clean API design and works well in production environments."</p>
+            <span>Team Lead, Enerweb</span>
+          </div>
+          <div class="card review-card">
+            <p>"Highly dependable, with strong debugging skills and a fast learner attitude."</p>
+            <span>Tech Mentor, WeThinkCode_</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Designed for growth and future enhancements, including Three.js backgrounds and typing effects.</p>
+      <p>© 2026 Siyamukelo Cebekulu</p>
+    </footer>
   </div>
-
-  <!-- Work Experience -->
-  <div class="card work">
-    <h2>Work Experience</h2>
-
-    <p><strong>Enerweb Pty Ltd</strong> — Junior Developer (C#, Angular, .NET)</p>
-    <p><strong>Meditech</strong> — Enterprise Systems</p>
-   
-    <a href="https://github.com/Siyamukelo00Cebekulu" target="_blank">Visit my GitHub</a>
-
-    <h3>Open Source & Learning</h3>
-    <p>HackerRank Certified (Java, C#). Multiple SoloLearn certifications. Active project-based learning.</p>
-
-    <a href="https://linkedin.com/in/siyamukelo-cebekulu-939199221" target="_blank">Visit my LinkedIn</a>
-  </div>
-
-  <!-- Education -->
-  <div class="card education">
-    <h2>Education</h2>
-
-    <p>Higher Certificate in Mathematics and Statistics</p>
-
-    <ul>
-      <li>Object Oriented Programming</li>
-      <li>Data Structures & Algorithms</li>
-      <li>Web Development (HTML, CSS, JS, Angular)</li>
-      <li>Backend Development (.NET, C#)</li>
-      <li>Quality Assurance Training (Re:code)</li>
-      <li>Mathematics & Statistics</li>
-    </ul>
-  </div>
-
-</section>
-
-<!-- Reviews -->
-<section class="reviews">
-  <h2>Reviews from Mentors</h2>
-  <div class="review-grid">
-    <div class="review">
-      Strong problem-solving ability and disciplined learner with excellent curiosity.
-    </div>
-    <div class="review">
-      Demonstrates real-world understanding of full stack systems and clean architecture.
-    </div>
-    <div class="review">
-      Highly self-driven developer with consistent project output and growth mindset.
-    </div>
-  </div>
-</section>
-
-<footer>
-  © Siyamukelo Cebekulu 2025
-</footer>
-
+  <script src="js/main.js" defer></script>
 </body>
 </html>

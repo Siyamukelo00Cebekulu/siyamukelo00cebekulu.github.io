@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects • Siyamukelo Cebekulu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand">
+        <a href="index.html">Siyamukelo Cebekulu</a>
+      </div>
+      <button class="nav-toggle" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <button class="theme-toggle" aria-label="Toggle dark mode">Dark</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Projects</p>
+          <h1>Selected work built for production and real-world impact.</h1>
+          <p class="hero-text">Each project highlights a strong focus on backend reliability, scalable design, and clean implementation using ASP.NET Core, EF Core, Angular, and Java.</p>
+        </div>
+      </section>
+
+      <section class="featured-grid">
+        <article class="card feature-card">
+          <h3>Todo List API</h3>
+          <p>ASP.NET Core • EF Core • SQLite • JWT</p>
+          <ul>
+            <li>Secure RESTful API with authentication and refresh token support.</li>
+            <li>Pagination, filtering, sorting, and structured error handling.</li>
+            <li>Integration tests covering authentication and core endpoint flows.</li>
+          </ul>
+        </article>
+
+        <article class="card feature-card">
+          <h3>Blogging Platform API</h3>
+          <p>ASP.NET Core • EF Core • SQLite • Swagger</p>
+          <ul>
+            <li>CRUD operations, search functionality, and API documentation.</li>
+            <li>Database schema design and migrations using Entity Framework Core.</li>
+            <li>Clean separation with controllers, models, and DTO layers.</li>
+          </ul>
+        </article>
+
+        <article class="card feature-card">
+          <h3>Expense Tracker CLI</h3>
+          <p>Java • Local Storage • Reporting</p>
+          <ul>
+            <li>Command-line expense tracking with budgeting alerts and export features.</li>
+            <li>Local data persistence using JSON/CSV formats.</li>
+            <li>Modular command structure for maintainability and reuse.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="reviews-section">
+        <div class="section-header">
+          <span class="eyebrow">Highlights</span>
+          <h2>Why these projects stand out</h2>
+        </div>
+        <div class="review-grid">
+          <div class="card review-card">
+            <h3>Stable architecture</h3>
+            <p>Designed APIs and systems that can scale with feature growth and production demands.</p>
+          </div>
+          <div class="card review-card">
+            <h3>Security first</h3>
+            <p>Implemented authentication, token security, and structured validation across services.</p>
+          </div>
+          <div class="card review-card">
+            <h3>Production-ready skills</h3>
+            <p>Experience working in enterprise systems with attention to reliability and debugging.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Projects are structured to be extended with front-end animation, live data, and Three.js visuals.</p>
+      <p>© 2026 Siyamukelo Cebekulu</p>
+    </footer>
+  </div>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

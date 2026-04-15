@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact • Siyamukelo Cebekulu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand">
+        <a href="index.html">Siyamukelo Cebekulu</a>
+      </div>
+      <button class="nav-toggle" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <button class="theme-toggle" aria-label="Toggle dark mode">Dark</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Contact</p>
+          <h1>Let’s build the next backend service together.</h1>
+          <p class="hero-text">Reach out for collaboration, contract work, or to discuss backend architecture and API development.</p>
+        </div>
+      </section>
+
+      <section class="contact-grid">
+        <article class="card contact-card">
+          <h2>Contact details</h2>
+          <p>Johannesburg, South Africa</p>
+          <p>Phone: +27 60 984 0190</p>
+          <p>Email: siyamukelocebekulu@gmail.com</p>
+          <div class="profile-links">
+            <a href="https://github.com/Siyamukelo00Cebekulu" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/siyamukelo-cebekulu-939199221" target="_blank">LinkedIn</a>
+          </div>
+        </article>
+
+        <article class="card contact-card">
+          <h2>Send a message</h2>
+          <form id="contact-form" novalidate>
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+              <small class="form-error" aria-live="polite"></small>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              <small class="form-error" aria-live="polite"></small>
+            </div>
+
+            <div class="form-field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project request or question" required />
+              <small class="form-error" aria-live="polite"></small>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Tell me about your project or question" required></textarea>
+              <small class="form-error" aria-live="polite"></small>
+            </div>
+
+            <button type="submit">Submit message</button>
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Form validation is included in JavaScript and ready for backend integration.</p>
+      <p>© 2026 Siyamukelo Cebekulu</p>
+    </footer>
+  </div>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
